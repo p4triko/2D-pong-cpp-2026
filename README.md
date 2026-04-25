@@ -1,5 +1,6 @@
 # 2026 UT C++ Projekt: 2D Pong rakendades SFML 3.0 teeki
-Kloon kurikuulast mängust "Pong" aastast 1972, arendatud Atari poolt.
+Kloon kurikuulast mängust "Pong" aastast 1972, arendatud Atari poolt. <br>
+Projekt kasutab malli "CMake SFML Project Template" https://github.com/SFML/cmake-sfml-project
 ## Juhend käivitamiseks (VsCode)
 Enne projekti vaatlemist veendu, et järgnev oleks arvutil olemas:
 * **Git**
