@@ -13,7 +13,7 @@ void Ball::update()
     shape.move(velocity);
 }
 
-void Ball::bounceTopBottom(const sf::RenderWindow& window)
+void Ball::bounceTopBottom(const sf::RenderWindow &window)
 {
     if (shape.getPosition().y < 0.f ||
         shape.getPosition().y + shape.getRadius() * 2 > window.getSize().y)
@@ -22,7 +22,7 @@ void Ball::bounceTopBottom(const sf::RenderWindow& window)
     }
 }
 
-void Ball::draw(sf::RenderWindow& window) const
+void Ball::draw(sf::RenderWindow &window) const
 {
     window.draw(shape);
 }
@@ -35,4 +35,13 @@ sf::FloatRect Ball::getBounds() const
 void Ball::reverseX()
 {
     velocity.x = -velocity.x;
+}
+
+sf::Vector2f Ball::getBallPosition()
+{
+    return shape.getPosition();
+}
+
+void Ball::resetBallPosition(sf::Vector2f startPos){
+    shape.setPosition(startPos);
 }

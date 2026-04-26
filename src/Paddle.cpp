@@ -1,4 +1,3 @@
-
 #include "Paddle.h"
 
 Paddle::Paddle(sf::Vector2f size, sf::Vector2f position, sf::Color color, float speed)

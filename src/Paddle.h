@@ -1,8 +1,5 @@
-
-
 #ifndef PONG2D_PADDLE_H
 #define PONG2D_PADDLE_H
-
 
 #pragma once
 #include <SFML/Graphics.hpp>
