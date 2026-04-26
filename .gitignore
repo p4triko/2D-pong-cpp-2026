@@ -4,3 +4,24 @@ out
 .idea
 .vs
 .vscode
+# CLion
+.idea/
+cmake-build-*/
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+build.ninja
+.ninja_*
+compile_commands.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Binaries
+*.exe
+*.dll
+*.o
+*.a
