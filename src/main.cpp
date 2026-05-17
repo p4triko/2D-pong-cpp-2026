@@ -2,6 +2,7 @@
 #include "Paddle.h"
 #include "Ball.h"
 #include <iostream>
+#include <array>
 
 const int WINDOW_WIDTH = 1000;
 const int WINDOW_HEIGHT = 720;
@@ -28,6 +29,11 @@ int main()
 		10.f,
 		BALL_START_POS,
 		{4.f, 4.f});
+
+	std::array middleLine = {
+		sf::Vertex{sf::Vector2f{WINDOW_WIDTH / 2, 0.f}},
+		sf::Vertex{sf::Vector2f{WINDOW_WIDTH / 2, WINDOW_WIDTH}}
+	};
 
 	while (window.isOpen())
 	{
@@ -83,6 +89,7 @@ int main()
 		}
 
 		window.clear();
+		window.draw(middleLine.data(), middleLine.size(), sf::PrimitiveType::Lines);
 		leftPlayer.draw(window);
 		rightPlayer.draw(window);
 		ball.draw(window);
